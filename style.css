@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#fffaf9;color:#444}
+.navbar{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:15px 8%;background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,0.06);position:sticky;top:0;z-index:99;
+}
+.logo{width:130px}
+.navbar ul{display:flex;list-style:none;gap:10px}
+.navbar ul li a{
+    text-decoration:none;color:#ff7a8a;padding:8px 18px;
+    border-radius:20px;font-weight:500;transition:0.3s;
+}
+.navbar ul li.active a, .navbar ul li a:hover{background:#ff7a8a;color:#fff}
+.hero{
+    background: linear-gradient(rgba(255,122,138,0.75), rgba(255,122,138,0.6)), url('scora-banner.jpg');
+    background-size:cover;background-position:center;
+    height:85vh;display:flex;align-items:center;justify-content:center;
+    text-align:center;color:white;
+}
+.hero h1{font-size:50px;letter-spacing:2px}
+.hero p{font-size:18px;margin-top:10px;font-weight:300}
+.section{padding:70px 8%;text-align:center}
+.section h1{color:#ff7a8a;font-size:32px}
+.section h3{color:#aaa;font-weight:300;margin-bottom:30px}
+.card-container{display:flex;flex-wrap:wrap;justify-content:center;gap:25px;margin-top:30px}
+.card{
+    width:260px;background:#fff;border-radius:20px;
+    padding:25px;box-shadow:0 8px 25px rgba(255,122,138,0.15);transition:0.3s;
+}
+.card:hover{transform:translateY(-8px)}
+.card h3{color:#ff7a8a;margin:15px 0 5px}
+.card p{font-size:13px;color:#777}
+.img-gallery{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:30px}
+.img-gallery img{border-radius:20px;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
+.footer{background:#ff7a8a;color:white;text-align:center;padding:25px;margin-top:50px}
